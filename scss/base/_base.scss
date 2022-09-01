@@ -1,0 +1,511 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+// ======================================
+//  Header
+// ======================================
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $color-main;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    width: 100%;   
+}
+
+.header-title{
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-icons {
+    display: flex;
+    margin: auto 10px;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    padding-right: 10px;
+    & a {
+        margin: auto 5px;
+    }
+}
+.svg-transform{
+    width: 25px;
+    fill: white;
+}
+
+.header-nav a img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+// ======================================
+//  Text
+// ======================================
+
+h1,
+.alert-box,
+.profile-name {
+    font-weight: lighter;
+}
+
+h2,
+h3 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
+
+// ======================================
+//  Nav bar
+// ======================================
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color-dark-purple;
+    padding: 10px 30px;
+    
+}
+
+.nav-bar svg {
+    width: 25px;
+    fill: white;
+}
+
+// ======================================
+//  layout / borderd
+// ======================================
+
+.dashboard-div {
+    display: flex;
+    height: 60px;
+}
+.dashboard-header {
+ margin: 20px 20px 5px 20px;
+}
+.empty-div {
+    background-color: $color-grey;
+    border-left: $border-thin;
+    border-bottom: $border-thin;
+    flex-grow: 1;
+
+}
+
+h3 {
+    margin-left: 15px;
+}
+
+.daily-header,
+.mobile-header,
+.social {
+    border-top: 1px $color-dark-grey solid;
+    margin-top: 30px;
+}
+
+// ======================================
+//  Alert
+// ======================================
+
+.alert-box {
+    display: flex;
+    background-color: $color-main;
+    color: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    padding: 10px 0;
+    font-size: .9rem;
+    margin: auto;
+    margin-top: 30px;
+}
+.alert-message {
+    padding-left: 10px;
+}
+
+.close-button {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    &:hover {
+        font-weight: bold;;
+    }
+}
+
+// ======================================
+//  SVG
+// ======================================
+
+.svg-transform {
+    transition: transform 0.3s ease-out;
+}
+
+.svg-transform:hover,
+.svg-transform:focus {
+    transform: scale(1.2);
+}   
+
+.widget-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.widgets {
+    display: flex;
+    border: $border-thin;
+    border-radius: 8px;
+    background-color: $color-grey;
+    padding: 15px 15px 15px 15px;
+    width: 90%;
+    max-width: 400px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.social-app-name {
+    color: $color-main;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.social-number {
+    color: $color-dark-grey;
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+.social-svg {
+    width: 35px;
+    border: 20px solid $color-main;
+    fill: white;
+    background: $color-main;
+    border-radius: 100%;
+    box-sizing: content-box;
+    margin-right: 15px;
+}
+
+.social-svg-ig {
+    fill: $color-main;
+    background: white;
+}
+
+//Charts
+
+.chart-container {
+    position: relative;
+    width: 90vw;
+    margin: auto;
+}
+
+.traffic-header {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin-top: 10px;
+}
+
+.traffic-header h3 {
+    margin-right: auto;
+}
+
+.traffic-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.traffic-nav-link {
+    margin: 0 2px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.selected-li {
+    border: 1px solid $color-dark-purple;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: $color-main;
+}
+
+
+// ======================================
+//  Member-widgets
+// ======================================
+
+.new-members,
+.recent-activity {
+    background-color: $color-grey;
+    border-top: $border-thin;
+}
+
+
+
+.member-li,
+.member-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    font-weight: lighter;
+}
+
+.new-members-header,
+.activity-header {
+    margin-bottom: 0;
+}
+
+.member-li {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: $border-thin;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.member-ul {
+    margin-top: 0;
+}
+
+.member-image {
+    border-radius: 50%;
+    margin-top: 10px;
+    width: 90px;
+}
+
+.member-name {
+    margin-bottom: 2px;
+}
+.member-email {
+    margin-bottom: 2px;
+}
+.member-date {
+    margin-top: 5px;
+}
+
+.activity-arrow {
+    display: none;
+}
+
+
+// Message 
+
+.message-user {
+    border-top: $border-thin;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-field,
+.text-field,
+#submit-message,
+.timezone-select {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: $border-thin;
+}
+
+.search-field,
+#submit-message,
+.timezone-select {
+    height: 50px;
+}
+#submit-message {
+    background-color: #7477bf;
+    color: white;
+    transition: border .1s ease-out;
+    &:hover {
+        border: solid 2px $color-grey;
+    }
+}
+
+.search-field {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-field,
+.text-field,
+.timezone-select {
+    background-color: $color-grey;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search-field::placeholder,
+.text-field::placeholder {
+    color: $color-dark-grey;
+    font-weight: lighter;
+}
+
+
+.errorMessage,
+.message-sent {
+    text-align: center;
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+// Toggle
+
+
+.widget-flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.setting-check-label {
+    margin-left: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.selectdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.timezone-select {
+    color: $color-dark-grey;
+    font-weight: lighter;
+}
+
+.widget-flex-container,
+.timezone-select {
+    margin-bottom: 30px;
+}
+
+.settings-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.save-button,
+.cancel-button {
+    width: 45%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px #999999 solid;
+    color: white;
+    transition: border .2s ease-out;
+    &:hover {
+        border: solid 2px $color-grey;
+    }
+}
+
+.save-button {
+    background-color: $color-main;
+}
+
+.cancel-button {
+    background-color: $color-dark-grey;
+}
+
+.activity-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+// Dropdown 
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .search-dropdown-content {
+    background-color: #f1f1f1;
+    position: absolute;
+    border-radius: 8px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .search-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover,
+  .search-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+// .searchList {
+//     display: none;
+// }
+
+.show {
+    display:block;
+}

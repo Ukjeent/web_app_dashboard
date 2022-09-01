@@ -1,0 +1,163 @@
+
+@media (min-width: 768px){
+    
+    .nav-bar {
+        flex-direction: column;
+        justify-content: start;
+        padding: 5px 10px;
+    }
+    .nav-bar a {
+            padding-top: 10px;
+    }
+
+    // .chart-container {
+    //     width: 80vw;
+    // }
+    
+    .small-charts,
+    .daily,
+    .mobile {
+        width: 45vw;
+    }
+
+    .traffic-header {
+        flex-direction: row;
+        width: 90vw;
+    }
+
+    .widget-box {
+        flex-direction: row;
+        max-width: 90vw;
+    }
+    .widgets {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .member-li {
+        flex-direction: row;
+    }
+
+    .member-date,
+    .activity-arrow {
+        margin-left: auto;
+    }
+    .activity-arrow {
+        display: block;
+    }
+
+    .member-info,
+    .recent-activity-container {
+        text-align: left;
+    }
+    .member-image {
+        margin-right: 20px;
+        margin-bottom: 25px;
+    }
+
+    .widget-flex-container {
+        margin-right: auto;
+        margin-left: 20px;
+        width: 40%;
+    }
+    
+    .daily {
+        margin-left: 10px;
+        border-right: $border-thin;
+        padding-right: 20px;
+    }
+
+    .mobile,
+    .daily {
+        padding-bottom: 40px;
+    }
+
+    .chart-flex {
+        display: flex;
+        align-content: center;
+        border-top: $border-thin;
+        margin-top: 20px;
+        border-bottom: $border-thin;
+    }
+    .daily-header, 
+    .mobile-header {
+        border-top: none;
+        width: 50%
+    }
+
+    #daily-chart {
+        padding-right: 30px;
+    }
+
+    .chart-container {
+        margin-left: 20px;
+    }
+
+    .social {
+        border-top: none;
+        margin-top: 0;
+    }
+
+    .activity-flex {
+        margin-top: 20px;
+    }
+
+    .new-members, 
+    .recent-activity {
+        background-color: white;
+    }
+
+    .dropdown-content {
+        width: 300px;
+        right: 0;
+      }
+
+}
+
+@media (min-width: 1024px){
+
+    .activity-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .new-members,
+    .recent-activity {
+        width: 50%;
+    }
+    .new-members {
+        border-right: $border-thin;
+    }
+
+    .activity-flex,
+    .footer-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-flex {
+        width: 100%;
+    }
+    
+    .settings {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .settings,
+    .message-user {
+        width: 50%;
+        border-top: $border-thin;
+    }
+    .message-user {
+        border-right: $border-thin;
+    }
+    .widget-flex-container {
+        width: 90%;
+    }
+
+
+
+}
+
+
+    

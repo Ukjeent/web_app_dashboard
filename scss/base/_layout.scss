@@ -1,0 +1,99 @@
+// ======================================
+//  Layout
+// ======================================
+
+// Main Grid
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main  {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+// dashboard grid
+
+.dashboard-div {
+    grid-area: dashboard;
+}
+
+.alert-box {
+    grid-area: alert;
+}
+
+.chart-flex {
+    grid-area: charts;
+}
+
+// .traffic {
+//     grid-area: traffic;
+// }
+
+// .daily {
+//     grid-area: daily;
+// }
+
+.mobile {
+    grid-area: mobile;
+}
+
+.social {
+    grid-area: social;
+}
+
+.activity-flex {
+    grid-area: activity;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 60px 40px auto auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+
+
+
+@media (min-width: 768px){
+    .grid {
+        grid-template-columns: 60px auto;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav main"
+        "nav footer";
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "dashboard dashboard"
+        "alert alert"
+        "traffic traffic"
+        "charts charts"
+        "social social"
+        "activity activity";
+    }
+}
+
+@media (min-width: 1024px){
+
+ 
+
+}
