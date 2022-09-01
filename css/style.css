@@ -106,11 +106,18 @@ header {
 .svg-transform {
   width: 25px;
   fill: white;
+  height: 40px;
 }
 
 .header-nav a img {
   width: 50px;
   border-radius: 50%;
+}
+
+#border-top-menu {
+  border: 0.3px solid rgba(255, 255, 255, 0.5);
+  margin: auto 5px;
+  height: 40px;
 }
 
 h1,
@@ -178,8 +185,7 @@ h3 {
   background-color: #7477BF;
   color: white;
   border-radius: 8px;
-  width: 90%;
-  max-width: 600px;
+  width: 95%;
   padding: 10px 0;
   font-size: 0.9rem;
   margin: auto;
@@ -291,10 +297,10 @@ h3 {
 }
 
 .selected-li {
-  border: 1px solid #4D4C72;
+  border: 1px solid #81c98f;
   border-radius: 20px;
   padding: 5px 10px;
-  background-color: #7477BF;
+  background-color: #81c98f;
 }
 
 .new-members,

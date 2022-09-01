@@ -808,6 +808,9 @@ document.addEventListener('click', (e) => {
     removeSavedMessage();
     CreateAndAppendMessage(settingsBox, settingBoxButtons, 'Saved', 'div', 'message-sent');
   } else if (click.id === 'cancel-settings') {
+    emailNotificationsSwitch.checked = true;
+    publicProfileSwitch.checked = true;
+    timezoneSelect.selectedIndex = 0;
     removeLocalStorageCheckbox(emailNotificationsSwitch);
     removeLocalStorageCheckbox(publicProfileSwitch);
     localStorage.removeItem('SelectedTimeZone');

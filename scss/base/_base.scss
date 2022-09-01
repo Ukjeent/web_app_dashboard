@@ -43,6 +43,7 @@ header {
 .svg-transform{
     width: 25px;
     fill: white;
+    height: 40px;
 }
 
 .header-nav a img {
@@ -50,6 +51,11 @@ header {
     border-radius: 50%;
 }
 
+#border-top-menu {
+    border: 0.3px solid rgba(255,255,255,.5);
+    margin: auto 5px;
+    height: 40px;
+}
 // ======================================
 //  Text
 // ======================================
@@ -130,8 +136,7 @@ h3 {
     background-color: $color-main;
     color: white;
     border-radius: 8px;
-    width: 90%;
-    max-width: 600px;
+    width: 95%;
     padding: 10px 0;
     font-size: .9rem;
     margin: auto;
@@ -250,10 +255,10 @@ h3 {
 }
 
 .selected-li {
-    border: 1px solid $color-dark-purple;
+    border: 1px solid #81c98f;
     border-radius: 20px;
     padding: 5px 10px;
-    background-color: $color-main;
+    background-color: #81c98f;
 }
 
 
